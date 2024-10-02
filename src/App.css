@@ -1,0 +1,24 @@
+.App {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modo-escuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+}
+
+@media (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+}

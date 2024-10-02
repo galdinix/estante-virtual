@@ -1,0 +1,21 @@
+.galeriaVideos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.itemVideo {
+  text-align: center;
+}
+
+.itemVideo h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.titulo {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}

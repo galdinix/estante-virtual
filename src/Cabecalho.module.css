@@ -1,0 +1,77 @@
+.cabecalho {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho h1 {
+  margin: 0;
+}
+
+.cabecalho nav {
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  z-index: 1;
+  opacity: 100%;
+  font-size: 1.4rem;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.botaoHamburguer {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu.aberto {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0.1vw;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .botaoHamburguer {
+    display: block;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.dropdown li {
+  color: black;
+  padding: 8px 20px;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}

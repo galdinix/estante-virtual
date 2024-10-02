@@ -1,0 +1,30 @@
+.botao {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.primario {
+  background-color: #007bff;
+  color: white;
+}
+
+.secundario {
+  background-color: #6c757d;
+  color: white;
+}
+
+.grande {
+  font-size: 1.25rem;
+}
+
+.pequeno {
+  font-size: 0.875rem;
+}
+
+.botao:hover {
+  opacity: 0.8;
+}
